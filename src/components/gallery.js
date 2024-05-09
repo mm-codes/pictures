@@ -8,7 +8,7 @@ export default function Gallery(){
       try {
         const response = await fetch('https://jsonplaceholder.typicode.com/photos');
         const data = await response.json();
-        setPhotos(data.slice(0, 30)); // First 30 photos for demonstration
+        setPhotos(data.slice(0, 30)); // first 30 photos for demonstration
       } catch (error) {
         console.error('Error fetching photos:', error);
       }
